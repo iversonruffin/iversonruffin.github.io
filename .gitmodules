@@ -1,0 +1,3 @@
+[submodule "gitfolder"]
+	path = gitfolder
+	url = ./gitfolder
