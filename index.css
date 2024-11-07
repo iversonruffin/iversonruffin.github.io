@@ -43,3 +43,11 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+  @font-face {
+    font-family: Rampart One;
+    src: url(Rampart_One/RampartOne-Regular.ttf);
+  }
+  a{
+    font-family: Rampart One;
+  }
