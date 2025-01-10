@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Rampart";
+  src: url('Rampart_One/RampartOne-Regular.ttf') format('truetype');
+}
+
+body { 
+  background-image: url(outspace3.png); 
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link { font-family: Rampart; color: white; }
+
+.card { 
+  height: 72vh;
+  animation: flipZoom 2s ease-out;  
+  max-width: 100%; 
+  background-color: black; 
+  border: 0.5vh solid white; 
+  position: relative;
+  perspective: 1000px;
+}
+
+.footer-text { text-align: center; }
+
+.footer { background-color: navy; color: white; position: fixed; bottom: 0; width: 100%; }
+
+.card-title {
+  font-family: Rampart;
+  font-size: 5vh;
+  color: white;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.front img {
+  height: 60vh;
+  padding: 2vh;
+  border-radius: 10%;
+}
+
+.active {
+  background-color: black;
+  border: .25vh solid white;
+  border-radius: 1vh;
+}
+
+#mainTitle {
+  font-size: 8vh;
+  font-family: Rampart;
+  color: white;
+}
+
+#igpic {
+  position: relative;
+  top: 1vh;
+}
+
+.card .front, .card .back {
+  backface-visibility: hidden;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.card .front {
+  transform: rotateY(0);
+}
+
+.card .back {
+  transform: rotateY(-180deg);
+  padding: 2vh;
+  overflow: auto;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0);
+}
+
+.back {
+  height: 100%;
+}
+
+@keyframes flipZoom {
+  0% {
+      transform: scale(0) rotateX(-360deg);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.second-card-text,
+.first-card-text {
+  display: grid;
+}
+
+.image-gal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#area {
+  padding-bottom: 15vh;
+  animation: fadeInScale 1s ease-in-out;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image-gal img {
+  transition: transform 0.5s ease;
+}
+
+.image-gal:hover img {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.image-gal img {
+  height: 50vh;
+  width: 50vh;
+  padding: 3vh;
+}
+
+#allCards {
+  height: 50%;
+  position: relative;
+  top: -2.5vh;
+  padding-bottom: 10vh;
+} 
+
+/* CONTACT PAGE */
+.contact_us_2 * {
+  font-family: Nunito, sans-serif;
+  animation: slideIn 1s ease-in-out;
+}
+
+.contact_us_2 .text-blk {
+  margin: 0;
+  line-height: 2.78vh;
+}
+
+/* ... Skipping the Contact Us section since it remains unchanged ... */
+/* CONTACT PAGE */
+.contact_us_2 * {
+  font-family: Nunito, sans-serif;
+  animation: slideIn 1s ease-in-out;
+}
+
+.contact_us_2 .text-blk {
+  margin: 0;
+  line-height: 2.78vh; /* 25px */
+}
+
+.contact_us_2 .responsive-cell-block {
+  min-height: 8.33vh; /* 75px */
+}
+
+.contact_us_2 input:focus {
+  outline: none;
+}
+
+.contact_us_2 .container-block {
+  min-height: 8.33vh; /* 75px */
+  width: 100%;
+  padding: 1.11vh; /* 10px */
+  display: block;
+}
+
+.contact_us_2 .submit-btn:hover {
+  background-color: #03fe63;
+}
+
+.contact_us_2 .responsive-container-block {
+  min-height: 8.33vh; /* 75px */
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto 5.56vh; /* 50px */
+  padding: 0;
+}
+
+.contact_us_2 .responsive-container-block.big-container {
+  padding: 1.11vh 3.33vh; /* 10px, 30px */
+  position: relative;
+  height: auto;
+}
+
+.contact_us_2 .responsive-container-block.container {
+  position: static;
+  min-height: 8.33vh; /* 75px */
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact_us_2 .container-block.form-wrapper {
+  background-color: white;
+  max-width: 799px;
+  text-align: center;
+  padding: 5.56vh 4.44vh; /* 50px, 40px */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.44vh 2.22vh 0.78vh; /* 4px, 20px, 7px */
+  border-radius: 0.67vh; /* 6px */
+  margin: 0 auto;
+}
+
+.contact_us_2 .text-blk.contactus-head {
+  font-size: 4vh; /* 36px */
+  line-height: 5.56vh; /* 50px */
+  font-weight: 900;
+}
+
+.contact_us_2 .text-blk.contactus-subhead {
+  color: #9c9c9c;
+  margin: 0 0 5.56vh; /* 50px */
+}
+
+.contact_us_2 .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+  margin: 0 0 2.89vh; /* 26px */
+  min-height: 5.56vh; /* 50px */
+}
+
+.contact_us_2 .input {
+  width: 96%;
+  height: 5.56vh; /* 50px */
+  padding: 0.11vh 1.67vh; /* 1px, 15px */
+  border: 0.22vh solid #eeeeee; /* 2px */
+  font-size: 1.78vh; /* 16px */
+  color: black;
+  border-radius: 0.44vh; /* 4px */
+}
+
+.contact_us_2 .textinput {
+  width: 98%;
+  min-height: 16.67vh; /* 150px */
+  padding: 2.22vh 1.67vh; /* 20px, 15px */
+  border: 0.22vh solid #eeeeee; /* 2px */
+  font-size: 1.78vh; /* 16px */
+  border-radius: 0.44vh; /* 4px */
+}
+
+.contact_us_2 .submit-btn {
+  width: 98%;
+  background-color: #182c35;
+  height: 6.67vh; /* 60px */
+  font-size: 2.22vh; /* 20px */
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 0.44vh; /* 4px */
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #allCards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      margin: 0;
+  }
+
+  .card {
+      height: 60vh;
+      width: 45vh;
+      margin: 5vh;
+  }
+
+  .front img {
+      height: 50vh;
+      width: 100%;
+      padding: 2vh;
+      border-radius: 10%;
+      position: relative;
+      bottom: 3vh;
+  }
+}
+
+/* New Media Query for widths > 768px */
+@media (min-width: 768px) {
+  .front img {
+      height: 85%;
+      max-width: 100%;
+      padding: 2vh;
+      border-radius: 10%;
+  }
+
+  .image-gal img {
+      height: 50vh;
+      width: 40vh;
+      padding: 3vh;
+  }
+
+  .card {
+      height: 70vh;
+      width: 50vh;
+      margin: 3vh;
+  }
+  
+  .card-title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Adjust font size for larger screens */
+    max-width: 100%; /* Prevent overflow */
+  }
+  
+  
+
+}
