@@ -28,6 +28,10 @@ body {
   perspective: 1000px;
 }
 
+.card.flipped{
+  transform: rotateY(180deg);
+}
+
 .footer-text { text-align: center; }
 
 .footer { background-color: navy; color: white; position: fixed; bottom: 0; width: 100%; }

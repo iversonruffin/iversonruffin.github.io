@@ -25,18 +25,18 @@ def send_email():
         message = request.form.get('message')
 
         # Example email sending logic
-        your_email = "artist.ivey.bot@gmail.com"
+        sender_email = "artist.ivey.bot@gmail.com"
         your_password = "yatu etug xiko ythr"
         receiver_email = "artist.iversonruffin@gmail.com"
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
-        server.login(your_email, your_password)
+        server.login(sender_email, your_password)
 
         email_message = EmailMessage()
         email_message.set_content(f"Name: {name}\nGuest Email: {guest_email}\nMessage: {message}")
         email_message["To"] = receiver_email
-        email_message["From"] = your_email
+        email_message["From"] = sender_email
         email_message["Subject"] = subject
 
         server.send_message(email_message)

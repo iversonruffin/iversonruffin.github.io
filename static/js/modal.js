@@ -10,11 +10,4 @@ function showModal(title, message) {
     modal.show();
 }
 
-const num = 10;
-const raining = false;
 
-if(num > 10 && raining){
-    console.log("Hello!");
-}else{
-    console.log("World!");
-}
