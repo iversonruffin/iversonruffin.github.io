@@ -16,6 +16,11 @@ body {
   box-sizing: border-box;
 }
 
+.card-img-top{
+  height: fit-content;
+  width: fit-content;
+}
+
 .nav-link { font-family: Rampart; color: white; }
 
 .card { 
@@ -45,8 +50,7 @@ body {
 }
 
 .front img {
-  height: 60vh;
-  padding: 2vh;
+  
   border-radius: 10%;
 }
 
