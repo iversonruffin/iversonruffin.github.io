@@ -10,16 +10,17 @@ body {
   overflow-x: hidden;
 }
 
+.card-body{
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.card-img-top{
-  height: fit-content;
-  width: fit-content;
-}
 
 .nav-link { font-family: Rampart; color: white; }
 
@@ -345,11 +346,7 @@ body {
       padding: 3vh;
   }
 
-  .card {
-      height: 70vh;
-      width: 50vh;
-      margin: 3vh;
-  }
+ 
   
   .card-title {
     font-size: clamp(1.5rem, 3vw, 2.5rem); /* Adjust font size for larger screens */
