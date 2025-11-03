@@ -83,7 +83,7 @@
     }
     
     #genius-cards{
-        margin-bottom: 35vh;
+        margin-bottom: 0vh;
     }
 
     .tech-dive-grid{
@@ -91,4 +91,13 @@
         justify-content: center;
         align-content: center;
         text-align: center;
+    }
+
+    #tech-dive-section, #genius-cards,
+    #about, #projects{
+        margin: 5vh;
+    }
+
+    #genius-cards{
+        margin-bottom: 20vh;
     }
