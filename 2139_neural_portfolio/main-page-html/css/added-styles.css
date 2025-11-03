@@ -1,0 +1,94 @@
+/* Chris Jones Player Card */
+.card-content .chrisName{    
+    background: linear-gradient(90deg, rgb(255,0,187), rgb(147,15,112));
+    -webkit-background-clip: text;        
+}
+
+.card-content .chrisNickName{    
+    background: linear-gradient(90deg, rgb(255,0,187), rgb(147,15,112));
+    -webkit-background-clip: text;        
+}
+
+/* Search bar */
+    .search-container {
+        position: relative;
+        width: 300px;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: var(--card-bg);
+        color: var(--text);
+    }
+
+    /* Modal popup */
+    .search-results {
+        position: absolute;
+        top: 110%;
+        width: 100%;
+        max-height: 250px; /* limit height */
+        overflow-y: auto;
+        background: var(--card-bg);
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        display: none;
+    }
+
+    .search-results.active {
+        display: block;
+    }
+
+    .search-item {
+        padding: 10px 15px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: red 0.2s;
+    }
+
+    .search-item:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Scrollbar styling */
+    .search-results::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .search-results::-webkit-scrollbar-thumb {
+        background-color: var(--primary);
+        border-radius: 4px;
+    }
+
+    .search-results::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .project-card img
+    {
+        width: 10%;
+        height: 20%;
+    }
+
+    .playerListContainer
+    {
+        width: 15%;
+        position: relative;
+        top: 5vh;
+    }
+    
+    #genius-cards{
+        margin-bottom: 35vh;
+    }
+
+    .tech-dive-grid{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }

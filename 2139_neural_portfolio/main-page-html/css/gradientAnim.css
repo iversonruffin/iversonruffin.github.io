@@ -1,0 +1,30 @@
+#animated-gradient{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, blue, green, orange, red, rgb(255, 16, 132));
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/*Animation gradient change*/
+@keyframes gradientAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    25%{
+        background-position: 50% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    75%{
+        background-position: 50% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
