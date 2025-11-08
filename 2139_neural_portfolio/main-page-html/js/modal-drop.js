@@ -1,4 +1,7 @@
 // ======== Genius List ========
+
+const geniuses = ["Christopher Jones", "Troy Simms", "Nehemiah Sowah", "Kaleb Harris"];
+/*
 const geniuses = [
   "Aiden Hammonds", "Brandon Allen", "Cameron Vinson", "Charles Milburn",
   "Christopher Jones", "Dakari House", "Darien Valentine", "Denard Howard",
@@ -6,6 +9,7 @@ const geniuses = [
   "Kylees Jones-McKinnon", "Maurice Wilson", "Nehemiah Sowah", "Torian Horton",
   "Trenten Horton", "Tristan Horton", "Troy Simms", "Xavier Robertson",
 ];
+*/
 
 // ======== Genius Data ========
 const geniusData = geniuses.reduce((acc, name) => {
@@ -74,7 +78,7 @@ geniusData["Troy Simms"] = {
 };
 
 geniusData["Nehemiah Sowah"] = {
-  nickname: "",
+  nickname: 'Code Name: "The Nimble"',
   description: "Nehemiah is THE best at basketball.",
   quote: `"You can't be afraid to fail. It's the only way you succeed." - Lebron James`,
   ability: "Creativity, Matter Manipulation",

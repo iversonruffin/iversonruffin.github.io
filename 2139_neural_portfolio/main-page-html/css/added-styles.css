@@ -77,9 +77,9 @@
 
     .playerListContainer
     {
-        width: 15%;
+        width:30vh;
         position: relative;
-        top: 5vh;
+        top: 1vh;
     }
     
     #genius-cards{
@@ -101,3 +101,41 @@
     #genius-cards{
         margin-bottom: 20vh;
     }
+
+   
+    .about-container {
+        display: grid;
+        place-items: 0; /* centers both horizontally + vertically */
+        flex-direction: column;
+        padding: 4rem 0;
+    }
+
+
+
+       
+
+    
+    @media only screen and (min-width: 769px) and (max-width: 1024px){
+        .player-card{
+            transform: scale(.8);
+            position: relative;
+            right: 20vh;
+        }
+
+        
+    }
+        /* Extra small devices (phones, 600px and down) 
+    @media only screen and (max-width: 600px) {...}
+
+    /* Small devices (portrait tablets and large phones, 600px and up) 
+    @media only screen and (min-width: 600px) {...}
+
+    /* Medium devices (landscape tablets, 768px and up) 
+    @media only screen and (min-width: 768px) {...}
+
+    /* Large devices (laptops/desktops, 992px and up) 
+    @media only screen and (min-width: 992px) {...}
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) 
+    @media only screen and (min-width: 1200px) {...}
+    */

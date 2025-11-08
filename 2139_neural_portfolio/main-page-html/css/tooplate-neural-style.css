@@ -399,7 +399,7 @@ https://www.tooplate.com/view/2139-neural-portfolio
         /* Sections */
         section {
             padding: 100px 50px;
-            max-width: 1200px;
+            max-width: auto;
             margin: 0 auto;
             position: relative;
             z-index: 2;
@@ -507,10 +507,17 @@ https://www.tooplate.com/view/2139-neural-portfolio
 
         .player-card
         {
-            width: 20%;
-            position: absolute;
-            right: 23rem;
-            top: 15rem;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            transform: scale(1);
+        }
+
+        .card-info{
+            display: flex;
+            flex-direction: row;
+            gap: 5vh;
+            
         }
         
         
