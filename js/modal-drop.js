@@ -70,7 +70,7 @@ geniusData["Troy Simms"] = {
   points: 0,
   division: "Barcelona",
   animation: "animate__fadeInDown",
-  image: "images/bluelock.jpg",
+  image: "./images/bluelock.jpg",
   colors: {
     start: "rgb(0, 150, 255)",
     end: "rgb(0, 50, 200)"
@@ -100,7 +100,7 @@ geniusData["Kaleb Harris"] = {
   points: "Error",
   division: "Real Madrid",
   animation: "animate__fadeInDown",
-  image: "images/headless.jpg",
+  image: "./images/headless.jpg",
   colors: {
     start: "rgb(24, 40, 255)",
     end: "rgb(255, 140, 0)"
