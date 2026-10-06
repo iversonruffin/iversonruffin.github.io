@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iverson Software Projects</title>
+  <style>
+    :root {
+      --black: #000000;
+      --navy: #07142e;
+      --blue: #1e5eff;
+      --blue-light: #4d8dff;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.5;
+    }
+    header {
+      padding: 72px 24px 48px;
+      background: linear-gradient(180deg, var(--navy), var(--black));
+      border-bottom: 4px solid var(--blue);
+    }
+    .wrap { max-width: 900px; margin: 0 auto; }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.1; }
+    header p { margin: 0; font-size: 1.1rem; max-width: 55ch; }
+    main { padding: 24px; }
+    section { margin: 48px auto; }
+    h2 {
+      margin: 0 0 8px;
+      padding-bottom: 8px;
+      font-size: 1.6rem;
+      border-bottom: 2px solid var(--blue);
+    }
+    .section-note { margin: 0 0 20px; }
+    .project {
+      display: block;
+      margin: 0 0 16px;
+      padding: 16px 20px;
+      background: var(--navy);
+      border-left: 6px solid var(--blue);
+      color: var(--white);
+      text-decoration: none;
+    }
+    .project:hover, .project:focus-visible {
+      background: #0c2250;
+      border-left-color: var(--blue-light);
+      outline: none;
+    }
+    .project:focus-visible { outline: 2px solid var(--white); outline-offset: 2px; }
+    .project h3 { margin: 0 0 4px; font-size: 1.2rem; }
+    .project p { margin: 0; }
+    .tag { margin-top: 8px; font-size: 0.9rem; }
+    footer { padding: 32px 24px 48px; border-top: 1px solid var(--blue); }
+    footer a { color: var(--white); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Iverson Software Projects</h1>
+      <p>Games and web apps I've built. Pick a project to open it.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="games">
+      <h2>Games</h2>
+
+      <a class="project" href="pacd-up/">
+        <h3>Pac'd Up</h3>
+        <p>A top-down shooter remix of Pac-Man. Move, dash, shoot, collect orbs for upgrades, and take on a three-phase boss.</p>
+      </a>
+
+      <a class="project" href="baltimorean-map-game/">
+        <h3>The Baltimorean Map Game</h3>
+        <p>A map game that tests how well you know Baltimore.</p>
+      </a>
+
+      <a class="project" href="iversonruffin.github.io-phonegame/">
+        <h3>PUSH: Dare to Push?</h3>
+        <p>A spin-style party game for your phone. Tap PUSH to get a prompt.</p>
+        <p class="tag">21+ only. Involves drinking. Play responsibly.</p>
+      </a>
+    </section>
+
+    <section id="web-apps">
+      <h2>Web Apps</h2>
+
+      <a class="project" href="hidden-genius/">
+        <h3>Hidden Genius Student Hub</h3>
+        <p>Students track assignments, create personal profiles, and sign up for opportunities.</p>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="https://github.com/iversonruffin">github.com/iversonruffin</a>
+    </div>
+  </footer>
+</body>
+</html>
